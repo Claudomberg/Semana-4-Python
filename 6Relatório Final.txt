@@ -1,0 +1,15 @@
+escreva("========================================")
+escreva("          RELATÓRIO DE PRODUTOS         ")
+escreva("========================================")
+escreva("Total de produtos cadastrados: ", total_produtos)
+escreva("----------------------------------------")
+escreva("Produto mais barato   : R$ ", menor_preco)
+escreva("Produto mais caro     : R$ ", maior_preco)
+escreva("Média geral de preços : R$ ", media_precos)
+escreva("----------------------------------------")
+
+escreva("Listagem Ordenada:")
+para i de 1 ate total_produtos faca
+    escreva(" -> ", nomes[i], " | ", categorias[i], " | R$ ", precos[i])
+fimpara
+escreva("========================================")

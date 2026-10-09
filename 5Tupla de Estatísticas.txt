@@ -1,0 +1,21 @@
+real menor_preco = precos[1]
+real maior_preco = precos[1]
+real soma_precos = 0
+real media_precos
+
+para i de 1 ate total_produtos faca
+    se precos[i] < menor_preco entao
+        menor_preco = precos[i]
+    fimse
+    
+    se precos[i] > maior_preco entao
+        maior_preco = precos[i]
+    fimse
+    
+    soma_precos = soma_precos + precos[i]
+fimpara
+
+media_precos = soma_precos / total_produtos
+
+// O conceito de imutabilidade de uma tupla não existe aqui;
+// Os dados ficam guardados em variáveis separadas prontas para leitura.

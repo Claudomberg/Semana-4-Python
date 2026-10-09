@@ -1,0 +1,20 @@
+cadeia categorias_unicas[100]
+inteiro qtd_unicas = 0
+logico repetida
+
+para i de 1 ate total_produtos faca
+    repetida = falso
+    
+    // Compara a categoria atual com as que já guardamos no novo vetor
+    para j de 1 ate qtd_unicas faca
+        se categorias[i] == categorias_unicas[j] entao
+            repetida = verdadeiro
+        fimse
+    fimpara
+    
+    // Se terminou de procurar e não é repetida, guarda no vetor único
+    se repetida == falso entao
+        qtd_unicas = qtd_unicas + 1
+        categorias_unicas[qtd_unicas] = categorias[i]
+    fimse
+fimpara

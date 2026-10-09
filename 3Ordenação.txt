@@ -1,0 +1,28 @@
+real aux_preco
+cadeia aux_nome, aux_cat
+inteiro i, j
+
+// Laço externo controla o número de passagens
+para i de 1 ate total_produtos - 1 faca
+    // Laço interno empurra o maior valor para o final
+    para j de 1 ate total_produtos - i faca
+        
+        // Ordem Crescente (para decrescente, usar <)
+        se precos[j] > precos[j+1] entao
+            // Troca de Preços
+            aux_preco = precos[j]
+            precos[j] = precos[j+1]
+            precos[j+1] = aux_preco
+            
+            // Troca de Nomes para manter a integridade
+            aux_nome = nomes[j]
+            nomes[j] = nomes[j+1]
+            nomes[j+1] = aux_nome
+            
+            // Troca de Categorias
+            aux_cat = categorias[j]
+            categorias[j] = categorias[j+1]
+            categorias[j+1] = aux_cat
+        fimse
+    fimpara
+fimpara

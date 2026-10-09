@@ -1,0 +1,12 @@
+real valor_referencia = 50.00
+inteiro escolha = 1 // 1 para acima, 2 para abaixo
+
+para i de 1 ate total_produtos faca
+    se (escolha == 1) e (precos[i] > valor_referencia) entao
+        escreva(nomes[i], " - R$ ", precos[i])
+    senao
+        se (escolha == 2) e (precos[i] < valor_referencia) entao
+            escreva(nomes[i], " - R$ ", precos[i])
+        fimse
+    fimse
+fimpara
